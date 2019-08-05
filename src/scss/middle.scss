@@ -1,0 +1,51 @@
+@import "partials/params";
+@import "partials/mixin";
+
+.middle {
+    @include clear;
+    background-color: $lightgrey;
+
+     &__content {
+         width: 220px;
+         border: 1px solid black;
+         font-family: Arial, Helvetica, sans-serif;
+
+         & .middle__title {
+                
+                display: flex;
+                margin-top: 60px;
+                margin-bottom: 20px;
+            & .title__icon {
+                width: 42px;
+                height: 42px;
+                border-radius: 50%;
+                background-color: $middleColor;
+                margin-right: 20px;
+                background-image: url(img/middle_icon.png);
+                background-repeat: no-repeat;
+                background-position: 11px 9px;
+                            
+             }
+    
+             & .title__text {
+                display: inline-block;
+                text-transform: uppercase;
+                font-size: 15px;
+                font-weight: bold;
+                
+             }
+         }
+        
+        & .middle__text {
+            font-size: 13px;
+            margin-bottom: 30px;
+            // line-height: 17px;
+        }
+
+        & .middle__link {
+           font-size: 13px;
+            color: $middleColor;
+        }
+
+     }
+}
