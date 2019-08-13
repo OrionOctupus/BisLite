@@ -7,7 +7,7 @@
     align-items: center;
     @include clear;
     padding-top: 20px;
-    padding-bottom: 40px;
+    // padding-bottom: 40px;
     border-top: 2px solid $darkmarin;
     background-color: $marin;
 
@@ -28,13 +28,20 @@
 
     &__dots {
         display: flex;
-        width: 100px;
+        justify-content: center;
+        margin-top: 12px;
+        margin-bottom: 15px;
+
         & .header__dot {
-            margin-right: 18px;
+            margin-left: 18px;
             width: 14px;
             height: 14px;
             border-radius: 50%;
             background-color: $dotcolor;
+        }
+
+        & .dotActive {
+            background-color: #fff;
         }
     }
 }

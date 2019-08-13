@@ -1,10 +1,14 @@
 @import "partials/params";
 @import "partials/mixin";
 
+body {
+    @include clear;
+}
 .view-port {
     width: 1000px;
     margin: 0 auto;
 }
+
 
 
     // background-color: $marin;

@@ -4,48 +4,76 @@
 .middle {
     @include clear;
     background-color: $lightgrey;
+    border-bottom: 1px solid #eeeff2;
+    &__container {
+        display: flex;
 
-     &__content {
-         width: 220px;
-         border: 1px solid black;
-         font-family: Arial, Helvetica, sans-serif;
+        & .middle__content {
+            // width: 220px;
+           //  border: 1px solid black;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-right: 45px;
+            margin-bottom: 50px;
 
-         & .middle__title {
+            &:last-child {
+                margin-right: 0;
+            }
+
+
+            & .middle__title {
+                   
+                   display: flex;
+                   margin-top: 60px;
+                   margin-bottom: 20px;
+               & .title__icon {
+                   width: 42px;
+                   height: 42px;
+                   border-radius: 50%;
+                   background-color: $middleColor;
+                   margin-right: 15px;
+                   background-image: url(img/middle_icon.png);
+                   background-repeat: no-repeat;
+                   background-position: 11px 9px;
+                               
+                }
+
+                & .title__icon--rd{
+                   background-position: -248px 9px;
+
+                }
                 
-                display: flex;
-                margin-top: 60px;
-                margin-bottom: 20px;
-            & .title__icon {
-                width: 42px;
-                height: 42px;
-                border-radius: 50%;
-                background-color: $middleColor;
-                margin-right: 20px;
-                background-image: url(img/middle_icon.png);
-                background-repeat: no-repeat;
-                background-position: 11px 9px;
-                            
-             }
-    
-             & .title__text {
-                display: inline-block;
-                text-transform: uppercase;
-                font-size: 15px;
-                font-weight: bold;
-                
-             }
-         }
-        
-        & .middle__text {
-            font-size: 13px;
-            margin-bottom: 30px;
-            // line-height: 17px;
-        }
+                & .title__icon--flp{
+                    background-position: -509px 9px;
+ 
+                 }
 
-        & .middle__link {
-           font-size: 13px;
-            color: $middleColor;
-        }
+                 & .title__icon--rfc{
+                    background-position: -771px 9px;
+ 
+                 }
 
-     }
+                & .title__text {
+                   display: inline-block;
+                   text-transform: uppercase;
+                   font-size: 15px;
+                   font-weight: bold;
+                }
+            }
+           
+           & .middle__text {
+               font-size: 13px;
+               margin-bottom: 30px;
+               // line-height: 17px;
+           }
+   
+           & .middle__link {
+              font-size: 13px;
+               color: $middleColor;
+               &:hover {
+                   text-decoration: underline;
+               }
+           }
+   
+        }
+    }
 }
