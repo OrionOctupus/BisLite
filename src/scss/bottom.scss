@@ -1,0 +1,85 @@
+@import 'partials/params';
+@import 'partials/mixin';
+
+.bottom {
+
+    &__content {
+
+        & .bottom__latest {
+
+            border-bottom: 1px solid $lightgrey;
+
+            & .lates__btn {
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                border: 1px solid black;
+                
+            }
+
+            & .latest__img {
+                width: 223px;
+                height: 160px;
+                outline: 1px solid black;
+            }
+        }
+
+        & .bottom__ourClients {
+            display: flex;
+            & .bottom__testim {
+                width: 525px;
+                padding-right: 90px;
+
+                & .testim__text {
+                    color: green;
+                }
+
+                & .testim__signature {
+                    font-style:italic; 
+                }
+            }
+
+           
+            & .bottom__client {
+
+                & .client__logo {
+                    width: 483px;
+                    height: 200px;
+                     outline: 1px solid black;
+
+                }
+            }
+
+        }
+
+        & .bottom__download {
+            display: flex;
+            width: 100%;
+            padding: 35px;
+            outline: 1px solid black;
+
+        }
+
+        & .bottom__title {
+            display: flex;
+
+            & .title__icon {
+                 width: 42px;
+                   height: 42px;
+                //    border-radius: 50%;
+                   background-color: $middleColor;
+                   margin-right: 15px;
+                   background-image: url(img/middle_icon.png);
+                   background-repeat: no-repeat;
+                   background-position: 11px 9px;
+            }
+
+            & .title__text {
+                display: inline-block;
+                text-transform: uppercase;
+                font-size: 15px;
+                font-weight: bold;
+            }
+        }
+    }
+}
