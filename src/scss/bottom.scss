@@ -2,12 +2,20 @@
 @import 'partials/mixin';
 
 .bottom {
+    font-family: Arial, Helvetica, sans-serif;
 
     &__content {
 
         & .bottom__latest {
-
+            margin-top: 20px;
             border-bottom: 1px solid $lightgrey;
+
+            & .bottom__title--latest {
+                display: flex;
+                align-items: center;
+                padding-bottom: 20px;
+                border-bottom: 1px solid $lightgrey;
+            }
 
             & .lates__btn {
                 width: 15px;
@@ -17,25 +25,45 @@
                 
             }
 
-            & .latest__img {
-                width: 223px;
-                height: 160px;
-                outline: 1px solid black;
+            & .lates__btn--left {
+                margin-left: auto;
+                margin-right: 12px;
+            }
+
+            & .latest__gallery {
+               display: flex;
+               justify-content: space-between;
+
+                & .latest__img {
+                    width: 223px;
+                    height: 160px;
+                    outline: 1px solid black;
+                    margin-top: 20px;
+                    margin-bottom: 40px;
+                }
             }
         }
 
         & .bottom__ourClients {
             display: flex;
+            padding-top: 20px;
+            padding-bottom: 40px;
+
             & .bottom__testim {
                 width: 525px;
                 padding-right: 90px;
+                font-size: 14px;
 
                 & .testim__text {
                     color: green;
+                    margin-bottom: 25px;
+                    line-height: 24px;
                 }
 
                 & .testim__signature {
                     font-style:italic; 
+                    font-weight: bold;
+                    color: $dotcolor;
                 }
             }
 
@@ -45,8 +73,14 @@
                 & .client__logo {
                     width: 483px;
                     height: 200px;
-                     outline: 1px solid black;
-
+                    //  outline: 1px solid black;
+                    display: grid;
+                    grid-template-columns: 161px 161px 161px ;
+                    grid-template-rows: 100px 100px;
+                    grid-gap: 0px;
+                     & .client__client {
+                         border: 1px solid black;
+                     }
                 }
             }
 
@@ -54,14 +88,36 @@
 
         & .bottom__download {
             display: flex;
-            width: 100%;
+            width: auto;
             padding: 35px;
-            outline: 1px solid black;
+            outline: 1px solid $middleColor;
+            margin-bottom: 40px;
+            background: #e8fcfe;
+            font-size: 16px;
 
+            & .download__text {
+                line-height: 1.5em;
+            }
+
+            & .download__btn {
+                display: inline-block;
+                text-align: center;
+                text-decoration: none;
+                padding: 0.5em 1em;
+                width: 552px;
+                border-radius: 10px;
+                border: 1px solid $middleColor;
+                background:linear-gradient(to bottom, #e8fcfe, $middleColor);
+                font-size: 18px;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-left: 80px;
+            }
         }
 
         & .bottom__title {
             display: flex;
+            margin-bottom: 20px;
 
             & .title__icon {
                  width: 42px;
@@ -78,7 +134,7 @@
                 display: inline-block;
                 text-transform: uppercase;
                 font-size: 15px;
-                font-weight: bold;
+                // font-weight: bold;
             }
         }
     }
