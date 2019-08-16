@@ -22,7 +22,7 @@
                 height: 15px;
                 border-radius: 50%;
                 border: 1px solid black;
-                
+                background: $marin;                 
             }
 
             & .lates__btn--left {
@@ -55,7 +55,6 @@
                 font-size: 14px;
 
                 & .testim__text {
-                    color: green;
                     margin-bottom: 25px;
                     line-height: 24px;
                 }
@@ -75,12 +74,35 @@
                     height: 200px;
                     //  outline: 1px solid black;
                     display: grid;
-                    grid-template-columns: 161px 161px 161px ;
-                    grid-template-rows: 100px 100px;
+                    grid-template-columns: 160px 160px 160px ;
+                    grid-template-rows: 98px 98px;
                     grid-gap: 0px;
-                     & .client__client {
-                         border: 1px solid black;
-                     }
+                    & .client__client--one {
+                        background: url('img/logo1.png') no-repeat;
+                        background-position: -6px -5px;
+                    }
+                    & .client__client--two {
+                        background: url('img/logo2.png') no-repeat;
+                        background-position: -6px -5px;
+                    }
+                    & .client__client--three {
+                        background: url('img/logo3.png') no-repeat;
+                        background-position: -6px -5px;
+                    }
+                    & .client__client--four {
+                        background: url('img/logo4.png') no-repeat;
+                        background-position: -6px -5px;
+                    }
+                    & .client__client--five {
+                        background: url('img/logo5.png') no-repeat;
+                        background-position: -6px -5px;
+                    }
+                    & .client__client--six {
+                        background: url('img/logo6.png') no-repeat;
+                        background-position: -6px -5px;
+                    }
+
+                     
                 }
             }
 
@@ -124,11 +146,27 @@
                    height: 42px;
                 //    border-radius: 50%;
                    background-color: $middleColor;
-                   margin-right: 15px;
+                //    margin-right: 15px;
                    background-image: url(img/middle_icon.png);
                    background-repeat: no-repeat;
                    background-position: 11px 9px;
             }
+
+            & .title__icon--latest {
+                background: url('img/arrow.png') no-repeat;
+                background-position: 0 10px;
+            }
+
+            & .title__icon--testim {
+                background: url('img/comments.png') no-repeat;
+                background-position: 0 10px;
+            }
+
+            & .title__icon--client {
+                background: url('img/clients.png') no-repeat;
+                background-position: 0 10px;
+            }
+
 
             & .title__text {
                 display: inline-block;
