@@ -3,4 +3,4 @@
 
 [DEMO](https://orionoctupus.github.io/BisLite/public/#)
 
-``stack
+**stack** : `html`, `sass`, `javaScript`, `gulp`. 
